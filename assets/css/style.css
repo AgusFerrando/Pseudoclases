@@ -55,8 +55,6 @@ main{
     text-align: center;
 } 
 
-
-
 h2{
     margin: 60% auto 35% auto;
     font-size: 30px;
@@ -84,23 +82,104 @@ button:hover{
     background-color: lightsteelblue;
 }
 
+/* ************************************* */
+
+.card-2{
+    position: absolute;
+    left: 40;
+    margin-left: 5%;
+
+}
+
 .card2{
     height: 400px;
     width: 300px;
-    background-color: black;
     margin-left: 2em;
+    position:relative;
+    overflow:hidden;
+    background-color:#fff;
+    border-radius:10px;     
+    border: 1px solid lightslategrey
 }
 
-.card3{
-    height: 400px;
-    width: 300px;
-    background-color: black;
-    margin-left: 2em;
+.card2 .img-bar{
+    height:100%;
+    background-image:url(/assets/img/cadaques.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:absolute;
+    transition:all 1s;
+    border-radius:5px;
 }
 
-.card4{
-    height: 400px;
-    width: 300px;
-    background-color: black;
-    margin-left: 2em;
+.card2 .img-bar:nth-child(1){
+    width:25%;
+    z-index:6;
+    transition-delay:0s;
+}
+  
+.card2 .img-bar:nth-child(2){
+    width:50%;
+    z-index:5;
+    transition-delay:0.2s;
+}
+  
+.card2 .img-bar:nth-child(3){
+    width:75%;
+    z-index:4;
+    transition-delay:0.4s;
+}
+  
+.card2 .img-bar:nth-child(4){
+    width:100%;
+    z-index:3;
+    transition-delay:0.6s;
+}
+
+.card2:hover .img-bar{
+    transform:translateY(-100%);
+}
+
+.card2:hover .img-bar:nth-child(1){
+    transition-delay:0.6s;
+}
+  
+.card2:hover .img-bar:nth-child(2){
+    transition-delay:0.4s;
+}
+
+.card2:hover .img-bar:nth-child(3){
+    transition-delay:0.2s;
+}
+
+.card2:hover .img-bar:nth-child(4){
+    transition-delay:0s;
+}
+ 
+.card-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:100%;
+    padding:0 30px;
+    text-align:center;
+    transform:translateY(100%);
+    transition:all 1.5s;
+    transition-delay:0.3s;
+}
+
+.card-content h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: lightslategray;
+}
+.card-content p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin:20px 0 30px;
+    color: lightslategrey;
+}
+
+.card2:hover .card-content{
+    transform:translateY(0);
 }
