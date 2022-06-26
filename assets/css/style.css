@@ -185,80 +185,19 @@ button:hover{
 }
 
 /* ************************************* */
+/* boton siguiente*/
+    .next-page{
+        position: absolute;
+        left: 40em;
+        background-color: rgb(17, 224, 55);
+        border: none;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 4px  rgb(19, 113, 19);
+        box-shadow: 0px 4px 5px black;
+    }
+   
 
-/* focus */
 
-  .input1{
-    margin-top: 2em; 
-    border-radius:50%;
-    width:40px;
-    cursor:pointer;
-    height:40px;
-    background-color:white;
-    outline:none;
-    background-image:url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-256.png");
-    background-size:30px;
-    background-position:center;
-    font-size:18px;
-    color:grey;
-    background-repeat:no-repeat;
-    border:1px solid grey;
-    transition-property:width, border-radius, background-position, padding-left;        /*  valores a  transformar */
-    transition-duration:0.5s;
+    /* *********************************** */
+
     
-  }
-  .input1:focus{
-    /*transformar*/
-    width:330px;
-    border-radius:5px;
-    cursor:text;
-    padding-left:40px;
-    padding-right:20px;
-    background-position:5px;
-    
-  }
-
-  /* *********************************** */
-
-  .send-message {
-    position: absolute;
-    width: 100%;
-    top: 0%;
-    left: 40em;
-    transform: translate(-50%, -50%);  
-    }
-    span {
-      display: block;
-      margin: 5px;
-      color: #ff3d3d;
-      font-weight: 600;
-    }
-    input {
-      border: none;
-      border-bottom: 2px solid #ff3d3d;
-      width: 250px;
-      height: 30px;
-      outline: none;
-      transition: background-color .5s linear;
-      color: #fff;
-    }
-    input:focus,
-    input:valid
-    {
-      background-color: #ff3d3d;
-    }
-    textarea {
-      border: 2px solid #ff3d3d;
-      min-width: 250px;
-      min-height: 150px;
-      max-width: 250px;
-      max-height: 250px;
-      outline: none;
-      transition: background-color .5s linear;
-      color: #fff;
-    }
-    textarea:focus,
-    textarea:valid 
-    {
-      background-color: #ff3d3d; 
-    }
