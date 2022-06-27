@@ -22,7 +22,6 @@ main{
     position: absolute;
     left: 10%;
     background-color: black;
-    /* transform: translate(-50%, -50%);  */
     transform-style: preserve-3d;
     perspective: 600px;
     transition: .5s;
